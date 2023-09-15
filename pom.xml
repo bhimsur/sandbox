@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>io.bhimsur</groupId>
 	<artifactId>sandbox</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-RELEASE</version>
 	<name>sandbox</name>
 	<description>Sandbox Research and Development</description>
 	<properties>
