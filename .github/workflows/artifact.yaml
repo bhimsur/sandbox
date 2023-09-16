@@ -50,3 +50,8 @@ jobs:
           tags: |
             ${{ secrets.REGION }}-docker.pkg.dev/${{ secrets.PROJECT_ID }}/${{ secrets.GAR_REPO }}/${{ secrets.IMAGE_NAME }}:${{ steps.get-tag.outputs.short_ref }}
             ${{ secrets.REGION }}-docker.pkg.dev/${{ secrets.PROJECT_ID }}/${{ secrets.GAR_REPO }}/${{ secrets.IMAGE_NAME }}:latest
+          build-args: |
+            "GCS_ENDPOINT=${{ secrets.GCS_ENDPOINT }}"
+            "GCS_SECRET=${{ secrets.GCS_SECRET }}"
+            "GCS_ACCESS=${{ secrets.GCS_ACCESS }}"
+            "GCS_BUCKET=${{ secrets.GCS_BUCKET }}"
